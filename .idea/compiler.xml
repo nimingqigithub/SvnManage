@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="SvnManage-Common" />
+        <module name="SvnManage-Constants" />
+        <module name="SvnManage-Explorer" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="SvnManage-Common" target="1.7" />
+      <module name="SvnManage-Constants" target="1.7" />
+      <module name="SvnManage-Explorer" target="1.7" />
+      <module name="SvnManageForLinux" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
