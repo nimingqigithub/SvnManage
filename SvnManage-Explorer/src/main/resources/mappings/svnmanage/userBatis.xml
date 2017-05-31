@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.assassin.modules.svnmanage.dao.UserDao">
+    <select id="selectUser" parameterType="com.assassin.modules.svnmanage.entity.UserEntity" resultType="com.assassin.modules.svnmanage.entity.UserEntity">
+        select * from t_user t
+        <where>
+            <if test="yhm!=null">
+              and t.yhm = #{yhm}
+            </if>
+        </where>
+    </select>
+    <select id="selectUserByUserName" parameterType="java.lang.String" resultType="com.assassin.modules.svnmanage.entity.UserEntity">
+         select * from t_user t where  t.yhm = #{yhm}
+    </select>
+    <update id="updatePassword" parameterType="com.assassin.modules.svnmanage.entity.UserEntity">
+        update t_user set mm=#{mm} where yhm=#{yhm}
+    </update>
+    <insert id="insert" parameterType="com.assassin.modules.svnmanage.entity.UserEntity" useGeneratedKeys="true" keyProperty="bsm">
+        insert into t_user(yhm,mm,xm,yx,bz,gxsj,dh)
+        values(#{yhm},#{mm},#{xm},#{yx},#{bz},#{gxsj},#{dh})
+    </insert>
+    <update id="update" parameterType="com.assassin.modules.svnmanage.entity.UserEntity">
+        update t_user set yhm=#{yhm},mm=#{mm},xm=#{xm},yx=#{yx},bz=#{bz},gxsj=,#{gxsj},dh=#{dh} where bsm=#{bsm}
+    </update>
+
+    <select id="verifyUser" parameterType="com.assassin.modules.svnmanage.entity.UserEntity" resultType="java.lang.Long">
+        select count(1) from t_user where yhm=#{yhm} and mm=#{mm}
+    </select>
+</mapper>
