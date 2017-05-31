@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="GisqRealEstate-HouseRight:jar">
+    <output-path>$PROJECT_DIR$/classes/artifacts/GisqRealEstate_HouseRight_jar</output-path>
+    <root id="archive" name="GisqRealEstate-HouseRight.jar">
+      <element id="module-output" name="GisqRealEstate-HouseRight" />
+    </root>
+  </artifact>
+</component>

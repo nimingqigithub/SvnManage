@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="GisqRealEstate-LimitRecheck:jar">
+    <output-path>$PROJECT_DIR$/classes/artifacts/GisqRealEstate_LimitRecheck_jar</output-path>
+    <root id="archive" name="GisqRealEstate-LimitRecheck.jar">
+      <element id="module-output" name="GisqRealEstate-LimitRecheck" />
+    </root>
+  </artifact>
+</component>

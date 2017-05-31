@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../GisqRealEstate-Constants/GisqRealEstate-Constants.iml" filepath="$PROJECT_DIR$/../GisqRealEstate-Constants/GisqRealEstate-Constants.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GisqRealEstate-Explorer.iml" filepath="$PROJECT_DIR$/GisqRealEstate-Explorer.iml" />
+    </modules>
+  </component>
+</project>

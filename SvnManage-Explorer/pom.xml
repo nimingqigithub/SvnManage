@@ -1,0 +1,115 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.assassin</groupId>
+	<artifactId>SvnManage-Explorer</artifactId>
+	<packaging>war</packaging>
+	<name>SvnManage-Explorer</name>
+    <parent>
+        <artifactId>SvnManage</artifactId>
+        <groupId>com.assassin</groupId>
+        <version>1.0.0</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+    <dependencies>
+        <dependency>
+            <groupId>com.assassin</groupId>
+            <artifactId>SvnManage-Common</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.assassin</groupId>
+            <artifactId>SvnManage-Constants</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+    </dependencies>
+
+    <profiles>
+        <!--测试-->
+        <profile>
+            <id>20.118测试发布环境</id>
+            <properties>
+                <!--客户端样式与脚本版本控制-->
+                <client.version>1.0</client.version>
+                <system.config>118测试环境</system.config>
+            </properties>
+        </profile>
+		<profile>
+			<id>20.119测试发布环境</id>
+			<properties>
+				<!--客户端样式与脚本版本控制-->
+				<client.version>1.0</client.version>
+				<system.config>119测试环境</system.config>
+			</properties>
+		</profile>
+        <!--开发-->
+        <profile>
+            <id>内部开发环境</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <!--客户端样式与脚本版本控制-->
+                <client.version>1.0</client.version>
+                <system.config>开发环境</system.config>
+            </properties>
+        </profile>
+
+		<profile>
+			<id>本机环境</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<properties>
+				<!--客户端样式与脚本版本控制-->
+				<client.version>1.0</client.version>
+				<system.config>本机环境</system.config>
+			</properties>
+		</profile>
+    </profiles>
+
+	<build>
+		<finalName>GisqRealEstate-Explorer</finalName>
+        <!--配置过虑-->
+        <filters>
+            <filter>src/main/config/config.${system.config}.properties</filter>
+        </filters>
+        <!--资源-->
+
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+			<resource>
+				<directory>src/main/config</directory>
+				<excludes>
+					<exclude>*</exclude>
+				</excludes>
+			</resource>
+
+		</resources>
+
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>2.3</version>
+                <configuration>
+                    <encoding>UTF-8</encoding>
+                </configuration>
+            </plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>2.4</version>
+			</plugin>
+        </plugins>
+
+	</build>
+
+    <properties>
+        <maven.compiler.source>1.7</maven.compiler.source>
+        <maven.compiler.target>1.7</maven.compiler.target>
+    </properties>
+</project>

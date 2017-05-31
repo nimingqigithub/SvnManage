@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="GisqRealEstate-Constants:jar">
+    <output-path>$PROJECT_DIR$/classes/artifacts/GisqRealEstate_Constants_jar</output-path>
+    <root id="archive" name="GisqRealEstate-Constants.jar">
+      <element id="module-output" name="GisqRealEstate-Constants" />
+    </root>
+  </artifact>
+</component>

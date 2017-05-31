@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="GisqRealEstate-Explorer:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="GisqRealEstate-Explorer.war">
+      <element id="artifact" artifact-name="GisqRealEstate-Explorer:war exploded" />
+    </root>
+  </artifact>
+</component>

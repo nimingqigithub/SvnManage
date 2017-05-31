@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="GisqRealEstate-TestMVC:jar">
+    <output-path>$PROJECT_DIR$/classes/artifacts/GisqRealEstate_TestMVC_jar</output-path>
+    <root id="archive" name="GisqRealEstate-TestMVC.jar">
+      <element id="module-output" name="GisqRealEstate-TestMVC" />
+    </root>
+  </artifact>
+</component>

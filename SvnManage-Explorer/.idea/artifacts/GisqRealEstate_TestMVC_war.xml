@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="GisqRealEstate-TestMVC:war">
+    <output-path>$PROJECT_DIR$/../GisqRealEstate-TestMVC/target</output-path>
+    <root id="archive" name="GisqRealEstate-TestMVC.war">
+      <element id="artifact" artifact-name="GisqRealEstate-TestMVC:war exploded" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/../GisqRealEstate-BusinessCommon" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../GisqRealEstate-Common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../GisqRealEstate-Constants" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../GisqRealEstate-HouseRight" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../GisqRealEstate-LimitRecheck" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../GisqRealEstate-RegisterSurvey" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../GisqRealEstate-TestMVC" charset="UTF-8" />
+  </component>
+</project>
